@@ -1,0 +1,346 @@
+/* ===================================Common CSS====================================== */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+section {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+img {
+    vertical-align: center;
+}
+
+/* ===================================Common CSS====================================== */
+
+/* ===================================root CSS====================================== */
+:root {
+    /* ==============Colors============= */
+    /* ============light mode============ */
+    --purple-color: #6759FF;
+    --white-color: #ffffff;
+    --text-color: #535763;
+    --btn-background: #F0F0F0;
+    --black-color: #1A1B2D;
+    /* ============light mode============ */
+
+    /* ============dark mode============ */
+    --purple-color_dark: #afb3bb;
+    --white-color_dark: #0F1621;
+    --text-color_dark: #D1D3D4;
+    --btn-background_dark: #18202E;
+    --black-color_dark: #ffffff;
+    /* ============dark mode============ */
+
+
+    /* ==============Colors============= */
+
+    /* ==============Transition============= */
+    --tran-02: all 0.2s ease;
+    --tran-03: all 0.3s ease;
+    --tran-04: all 0.4s ease;
+    --tran-05: all 0.5s ease;
+    /* ==============Transition============= */
+}
+
+/* ===================================root CSS====================================== */
+
+body[data-theme='light'] {
+    --purple-color: #6759FF;
+    --white-color: #ffffff;
+    --text-color: #535763;
+    --btn-background: #F0F0F0;
+    --black-color: #1A1B2D;
+}
+
+/* Dark mode */
+body[data-theme='dark'] {
+    --purple-color: #afb3bb;
+    --white-color: #0F1621;
+    --text-color: #D1D3D4;
+    --btn-background: #18202E;
+    --black-color: #ffffff;
+}
+
+body {
+    background-color: grey;
+    font-family: "Poppins", sans-serif;
+}
+
+.defaultDrawer {
+    display: none;
+    width: 375px;
+    padding: 24px;
+    background-color: var(--white-color);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.profile__person {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.profile__name {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+    color: var(--black-color);
+}
+
+.profile__mail {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    letter-spacing: -0.12px;
+    color: var(--text-color);
+}
+
+.profileInfo {
+    width: 195px;
+    margin-right: 48px;
+}
+
+.crossBtn {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: var(--tran-03);
+}
+
+.crossBtn:hover{
+    color: red;
+}
+
+.menu {
+    margin-bottom: 202px;
+}
+
+.menu__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 48px;
+    width: 327px;
+    border-radius: 8px;
+    padding: 0 12px;
+    transition: var(--tran-03);
+}
+
+.menu__item i {
+    font-size: 24px;
+    color: var(--text-color);
+    margin-right: 6px;
+}
+
+.menu__item h4 {
+    width: 241px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+    color: var(--text-color);
+    margin-right: 12px;
+}
+
+.menu__item p {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    background-color: #FB9B9B;
+    text-align: center;
+    line-height: 20px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.menu__item:hover{
+    background-color: var(--purple-color);
+    cursor: pointer;
+}
+
+.menu__item:hover h4{
+    color: var(--white-color);
+}
+
+.menu__item:hover i{
+    color: var(--white-color);
+}
+
+.colorScheme {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.colorScheme::before{
+    content: '';
+    position: absolute;
+    width: 327px;
+    height: 2px;
+    border-radius: 2px;
+    background: rgba(209, 211, 212, 0.2);
+    top: -16px;
+    left: 0px;
+}
+
+.colorScheme i {
+    font-size: 24px;
+}
+
+.colorScheme p {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+}
+
+.switch {
+    width: 262px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: var(--btn-background);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.switch button {
+    width: 125px;
+    height: 32px;
+    border-radius: 32px;
+    background-color: var(--white-color);
+    border: none;
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+    cursor: pointer;
+    box-shadow:
+        inset 0px -1px 1px 0px rgba(0, 0, 0, 0.04),
+        /* First inner shadow */
+        inset 0px 2px 0px 0px rgba(255, 255, 255, 0.25),
+        /* Second inner shadow */
+        0px 4px 8px -4px rgba(0, 0, 0, 0.25);
+    /* Drop shadow */
+
+}
+
+.switch .toggle_dark {
+    background-color: var(--btn-background);
+    box-shadow: none;
+}
+
+
+
+
+
+
+/* =========================================Collapsed Part========================================= */
+.collpasedDrawer{
+    width: 96px;
+    background-color: var(--white-color);
+    padding: 24px;
+}
+
+.collapsedProfile{
+    margin-bottom: 32px;
+}
+
+.collapsedItem{
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.collapsedItem:hover{
+    background-color: var(--purple-color);
+}
+
+.collapsedItem:hover i{
+    color: var(--white-color);
+}
+
+.collapsedItem i{
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+.collapsedElements{
+    margin-bottom: 240px;
+}
+
+.collapsedBottom{
+    position: relative;
+}
+
+.collapsedBottom::before{
+    content: '';
+    position: absolute;
+    top: -18px;
+    left: 0;
+    width: 48px;
+    height: 2px;
+    background-color: rgba(209, 211, 212, 0.2);
+}
+
+.collapsedModeBtn{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 3px solid #F1F1F1;
+    background-color: var(--white-color);
+    color: var(--text-color);
+    font-size: 24px;
+    transition: 0.3s ease-in-out;
+}
+
+.collapsedModeBtn:hover{
+    background-color: var(--text-color);
+    color: var(--white-color);
+}
+/* =========================================Collapsed Part========================================= */

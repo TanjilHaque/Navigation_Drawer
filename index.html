@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Drawer</title>
+    <!-- ===================================Google Fonts=================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- ===================================Google Fonts=================================== -->
+
+    <!-- ===================================Font Awsome Icons=================================== -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-thin.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-solid.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-regular.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-light.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-thin.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-regular.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-light.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-thin.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-regular.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-light.css">
+    <!-- ===================================Font Awsome Icons=================================== -->
+
+    <link rel="stylesheet" href="./css/style.css">
+
+
+</head>
+
+<body>
+   <div class="defaultDrawer">
+        <div class="profile">
+            <img src="person.jpg" alt="person" class="profile__person">
+            <div class="profileInfo">
+                <h4 class="profile__name">Tanjil Haque</h4>
+                <h5 class="profile__mail">tanjil8778@gmail.com</h5>
+            </div>
+            <button class="crossBtn"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <ul class="menu">
+            <li class="menu__item">
+                <i class="fa-solid fa-calendar"></i>
+                <h4>Calendar</h4>
+                <p>2</p>
+            </li>
+            <li class="menu__item">
+                <i class="fa-solid fa-ribbon"></i>
+                <h4>Rewards</h4>
+                <p>3</p>
+            </li>
+            <li class="menu__item">
+                <i class="fa-regular fa-location-dot"></i>
+                <h4>Address</h4>
+                <p>3</p>
+            </li>
+            <li class="menu__item">
+                <i class="fa-regular fa-wallet"></i>
+                <h4>Payment Methods</h4>
+                <p>3</p>
+            </li>
+            <li class="menu__item">
+                <i class="fa-regular fa-badge-percent"></i>
+                <h4>Discount</h4>
+                <p>2</p>
+            </li>
+            <li class="menu__item">
+                <i class="fa-light fa-user-group"></i>
+                <h4>Refer a Friend</h4>
+                <p>3</p>
+            </li>
+            <li class="menu__item">
+                <i class="fa-regular fa-phone"></i>
+                <h4>Support</h4>
+                <p>3</p>
+            </li>
+        </ul>
+        <footer class="colorMode">
+            <div class="colorScheme">
+                <i class="fa-regular fa-circle-question"></i>
+                <p>Color Scheme</p>
+            </div>
+            <div class="switch">
+                <button class="toggle_light">
+                    <i class="fa-regular fa-sun-bright"></i>
+                    Light
+                </button>
+                <button class="toggle_dark">
+                    <i class="fa-light fa-moon"></i>
+                    Dark
+                </button>
+            </div>
+        </footer>
+   </div>
+   
+   <div class="collpasedDrawer">
+        <img src="person.jpg" alt="person" class="profile__person collapsedProfile">
+        <ul class="collapsedElements">
+            <li class="collapsedItem">
+                <i class="fa-solid fa-calendar"></i>
+            </li>
+            <li class="collapsedItem">
+                <i class="fa-solid fa-ribbon"></i>
+            </li>
+            <li class="collapsedItem">
+                <i class="fa-regular fa-location-dot"></i>
+            </li>
+            <li class="collapsedItem">
+                <i class="fa-regular fa-wallet"></i>
+            </li>
+            <li class="collapsedItem">
+                <i class="fa-regular fa-badge-percent"></i>
+            </li>
+            <li class="collapsedItem">
+                <i class="fa-light fa-user-group"></i>
+            </li>
+            <li class="collapsedItem">
+                <i class="fa-regular fa-phone"></i>
+            </li>
+        </ul>
+        <footer class="collapsedBottom">
+            <button class="collapsedModeBtn">
+                <i class="fa-regular fa-sun-bright"></i>
+            </button>
+        </footer>
+   </div>
+
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
